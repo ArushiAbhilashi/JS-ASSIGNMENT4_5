@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=Number(prompt("ENTER THE SALES: "))
+        let res
+        if(x<=5000){
+            console.log("COMISSION EARNED :2%")
+            res=x+(x*.02)
+            console.log("TOTAL SALES: "+res)
+
+
+        }
+        else if(x>5000 && x<=10000){
+            console.log("COMISSION EARNED :5%")
+            res=x+(+[(5000*0.02)+((x-5000)*0.05)])
+            console.log("TOTAL SALES: "+res)
+        }
+        else if(x>10000 && x<=20000){
+            console.log("COMISSION EARNED :7%")
+            res=x+(+[(10000*0.05)+((x-10000)*0.07)])
+            console.log("TOTAL SALES: "+res)
+        }
+        else{
+            console.log("COMISSION EARNED :9%")
+            res=x+(+[(20000*0.07)+((x-20000)*0.09)])
+            console.log("TOTAL SALES: "+res)
+
+
+        }
+ </script>
+    
+</body>
+</html>
